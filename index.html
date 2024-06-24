@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/Tapak_Kawasan_Prioritas_2.js"></script><script src="layers/Tapak_Pusat_Desa_3.js"></script><script src="layers/RencanaPolaRuang_4.js"></script><script src="layers/Rencana_Tempat_Pengelolaan_Sampah_Reuse_Reduce_Recycle_TPS3R_5.js"></script><script src="layers/Rencana_Sistem_Menara_Base_Tranceiver_Station_BTS_6.js"></script><script src="layers/Rencana_Sistem_Infrastruktur_Pengolahan_Air_Limbah_SPAL_7.js"></script><script src="layers/Rencana_Gardu_Distribusi_8.js"></script><script src="layers/Rencana_Bangunan_Penagkap_Mata_Air_9.js"></script><script src="layers/Rencana_Jaringan_Transmisi_Air_Baku_10.js"></script><script src="layers/Rencana_Saluran_Distribusi_Lainnya_11.js"></script><script src="layers/Rencana_Jaringan_Drainase_Sekunder_12.js"></script><script src="layers/Sistem_Prasarana_Lainnya_13.js"></script><script src="layers/Eksisting_Tempat_Peampungan_Sementara_TPS_14.js"></script><script src="layers/Eksisting_Sistem_Penyediaan_Air_Minum_15.js"></script><script src="layers/Eksisting_Sistem_Menara_Base_Tranceiver_Station_BTS_16.js"></script><script src="layers/Eksisting_Gardu_Distribusi_17.js"></script><script src="layers/Sistem_Tanggul_Penahan_Longsor_18.js"></script><script src="layers/Sistem_Jalur_Evakuasi_Bencana_19.js"></script><script src="layers/Eksisting_Saluran_Distribusi_Lainnya_20.js"></script><script src="layers/Eksisting_Jaringan_Transmisi_Air_Baku_21.js"></script><script src="layers/Eksisting_Jaringan_Drainase_Primer_22.js"></script><script src="layers/SistemPusatPelayanan_23.js"></script><script src="layers/Batas_Dusun_24.js"></script><script src="layers/Batas_RW_25.js"></script><script src="layers/Batas_RT_26.js"></script><script src="layers/Sungai_27.js"></script><script src="layers/Jalan_28.js"></script><script src="layers/Ibukota_Desa_29.js"></script>
+        <script src="styles/Tapak_Kawasan_Prioritas_2_style.js"></script><script src="styles/Tapak_Pusat_Desa_3_style.js"></script><script src="styles/RencanaPolaRuang_4_style.js"></script><script src="styles/Rencana_Tempat_Pengelolaan_Sampah_Reuse_Reduce_Recycle_TPS3R_5_style.js"></script><script src="styles/Rencana_Sistem_Menara_Base_Tranceiver_Station_BTS_6_style.js"></script><script src="styles/Rencana_Sistem_Infrastruktur_Pengolahan_Air_Limbah_SPAL_7_style.js"></script><script src="styles/Rencana_Gardu_Distribusi_8_style.js"></script><script src="styles/Rencana_Bangunan_Penagkap_Mata_Air_9_style.js"></script><script src="styles/Rencana_Jaringan_Transmisi_Air_Baku_10_style.js"></script><script src="styles/Rencana_Saluran_Distribusi_Lainnya_11_style.js"></script><script src="styles/Rencana_Jaringan_Drainase_Sekunder_12_style.js"></script><script src="styles/Sistem_Prasarana_Lainnya_13_style.js"></script><script src="styles/Eksisting_Tempat_Peampungan_Sementara_TPS_14_style.js"></script><script src="styles/Eksisting_Sistem_Penyediaan_Air_Minum_15_style.js"></script><script src="styles/Eksisting_Sistem_Menara_Base_Tranceiver_Station_BTS_16_style.js"></script><script src="styles/Eksisting_Gardu_Distribusi_17_style.js"></script><script src="styles/Sistem_Tanggul_Penahan_Longsor_18_style.js"></script><script src="styles/Sistem_Jalur_Evakuasi_Bencana_19_style.js"></script><script src="styles/Eksisting_Saluran_Distribusi_Lainnya_20_style.js"></script><script src="styles/Eksisting_Jaringan_Transmisi_Air_Baku_21_style.js"></script><script src="styles/Eksisting_Jaringan_Drainase_Primer_22_style.js"></script><script src="styles/SistemPusatPelayanan_23_style.js"></script><script src="styles/Batas_Dusun_24_style.js"></script><script src="styles/Batas_RW_25_style.js"></script><script src="styles/Batas_RT_26_style.js"></script><script src="styles/Sungai_27_style.js"></script><script src="styles/Jalan_28_style.js"></script><script src="styles/Ibukota_Desa_29_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>

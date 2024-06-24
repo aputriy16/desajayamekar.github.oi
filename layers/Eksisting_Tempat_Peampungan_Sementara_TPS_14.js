@@ -1,0 +1,1 @@
+var json_Eksisting_Tempat_Peampungan_Sementara_TPS_14 = {"type":"FeatureCollection","name":"Eksisting_Tempat_Peampungan_Sementara_TPS_14","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"Id":0.0,"KET":"TPS"},"geometry":{"type":"Point","coordinates":[108.00030334677966,-6.965588850533906]}}]}
